@@ -1,6 +1,11 @@
 import java.util.*;
 
 public class MapFactory {
+    /**
+     * Return the implementation of the map.
+     * @param mapType
+     * @return
+     */
 
     public static Map getMap(String mapType){
         if (mapType.equals("1")) {
