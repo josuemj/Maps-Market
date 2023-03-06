@@ -24,7 +24,7 @@ public class MapBuilder {
 
                 //Splitting (Separating) the data to read elements.
                 String[] lineSplited = line.split("[|]");
-
+                //Like python String[x:y]
                 String key = lineSplited[0].substring(0,lineSplited[0].length()-1); //The future map key
                 //System.out.println("Key=="+key+"==lenght:"+key.length());
                 String value = lineSplited[1].substring(1,lineSplited[1].length());
@@ -45,7 +45,6 @@ public class MapBuilder {
             try {
                 if (reader != null) {
                     reader.close();
-                    System.out.println("FILE CLOSED");
                 }
             } catch (IOException e) {
                 System.out.println("ERROR");
