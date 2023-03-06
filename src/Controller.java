@@ -122,7 +122,6 @@ public class Controller {
             System.out.println("\nCATEGORIA: "+key);
             for(int i = 0; i<mapBuilt.size();i++) {
                 try {
-
                     if (userInfor){
                         if (userMap.get(mapBuilt.get(key).get(i))==null){
                             System.out.println((i + 1) + ". " + mapBuilt.get(key).get(i)+" --User collection: 0");
@@ -132,16 +131,10 @@ public class Controller {
                     }else{
                         System.out.println((i + 1) + ". " + mapBuilt.get(key).get(i));
                     }
-
-
                 } catch (Exception e) {
                 }
             }
 
         }
     }
-
-
-
-
 }

@@ -75,6 +75,7 @@ public class Main {
                             Controller.showSortUserInfor(mapBuilt,userCollection,true);
                             break;
                         case "5":
+                            Controller.showSortUserInfor(mapBuilt,userCollection,false);
                             break;
                         case "6":
                             Controller.showSortUserInfor(mapBuilt,userCollection,false);
