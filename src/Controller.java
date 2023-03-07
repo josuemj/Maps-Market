@@ -90,6 +90,14 @@ public class Controller {
         }
     }
 
+    /**
+     * Show the items that user does not have/have.
+     * @param in
+     * @param mapBuilt
+     * @param userMap
+     * @param userProduct
+     */
+
     public static void articleInfo(Scanner in,Map mapBuilt,Map userMap,boolean userProduct){
         System.out.println("Ingresar el articulo");
         String art = in.nextLine();
@@ -116,6 +124,13 @@ public class Controller {
         }
         return false;
     }
+
+    /**
+     * Shows sorted data
+     * @param mapBuilt
+     * @param userMap
+     * @param userInfor
+     */
 
     public static void showSortUserInfor(Map<String,ArrayList<String>> mapBuilt, Map<String,Integer> userMap,boolean userInfor){
         for(String key: mapBuilt.keySet()){
